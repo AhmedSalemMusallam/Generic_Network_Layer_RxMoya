@@ -6,12 +6,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let provider : NetworkProviderProtocol = NetworkProviderManager()
+        
+        provider.readUserFromAPI().asObservable().subscribe(onNext: { users in
+            print(users)
+        },onError: { error in
+            print(error.localizedDescription)
+            
+        },onCompleted: {
+            print("Mission Successfully Completed.")
+        }
+        ).disposed(by: disposeBag)
     }
 
 

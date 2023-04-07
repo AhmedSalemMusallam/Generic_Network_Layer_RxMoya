@@ -13,9 +13,14 @@
 		5BC063E729DFB6D400330A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC063E529DFB6D400330A73 /* Main.storyboard */; };
 		5BC063E929DFB6D500330A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC063E829DFB6D500330A73 /* Assets.xcassets */; };
 		5BC063EC29DFB6D500330A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC063EA29DFB6D500330A73 /* LaunchScreen.storyboard */; };
+		5BC063F529DFBA9000330A73 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC063F429DFBA9000330A73 /* NetworkTarget.swift */; };
+		5BC063F729DFBE0F00330A73 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC063F629DFBE0F00330A73 /* NetworkProvider.swift */; };
+		5BC063F929DFBE8B00330A73 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC063F829DFBE8B00330A73 /* User.swift */; };
+		7E71E2566423843903E5EC5C /* Pods_Generic_Network_Layer_RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E3A327138A73E23F7AB51F /* Pods_Generic_Network_Layer_RxMoya.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46E3A327138A73E23F7AB51F /* Pods_Generic_Network_Layer_RxMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generic_Network_Layer_RxMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC063DC29DFB6D400330A73 /* Generic_Network_Layer_RxMoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Generic_Network_Layer_RxMoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC063DF29DFB6D400330A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC063E129DFB6D400330A73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		5BC063E829DFB6D500330A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BC063EB29DFB6D500330A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC063ED29DFB6D500330A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC063F429DFBA9000330A73 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		5BC063F629DFBE0F00330A73 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		5BC063F829DFBE8B00330A73 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F2634958519DE09B73D450D /* Pods-Generic_Network_Layer_RxMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generic_Network_Layer_RxMoya.release.xcconfig"; path = "Target Support Files/Pods-Generic_Network_Layer_RxMoya/Pods-Generic_Network_Layer_RxMoya.release.xcconfig"; sourceTree = "<group>"; };
+		B8E05E6442412F7562B2C2ED /* Pods-Generic_Network_Layer_RxMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generic_Network_Layer_RxMoya.debug.xcconfig"; path = "Target Support Files/Pods-Generic_Network_Layer_RxMoya/Pods-Generic_Network_Layer_RxMoya.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E71E2566423843903E5EC5C /* Pods_Generic_Network_Layer_RxMoya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F8C340BAB68DF8FB2A237E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E05E6442412F7562B2C2ED /* Pods-Generic_Network_Layer_RxMoya.debug.xcconfig */,
+				5F2634958519DE09B73D450D /* Pods-Generic_Network_Layer_RxMoya.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BC063D329DFB6D400330A73 = {
 			isa = PBXGroup;
 			children = (
 				5BC063DE29DFB6D400330A73 /* Generic_Network_Layer_RxMoya */,
 				5BC063DD29DFB6D400330A73 /* Products */,
+				3F8C340BAB68DF8FB2A237E1 /* Pods */,
+				A5871C3E86FC13792F81A129 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +78,7 @@
 		5BC063DE29DFB6D400330A73 /* Generic_Network_Layer_RxMoya */ = {
 			isa = PBXGroup;
 			children = (
+				5BC063F329DFBA8000330A73 /* Network */,
 				5BC063DF29DFB6D400330A73 /* AppDelegate.swift */,
 				5BC063E129DFB6D400330A73 /* SceneDelegate.swift */,
 				5BC063E329DFB6D400330A73 /* ViewController.swift */,
@@ -67,6 +90,24 @@
 			path = Generic_Network_Layer_RxMoya;
 			sourceTree = "<group>";
 		};
+		5BC063F329DFBA8000330A73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5BC063F429DFBA9000330A73 /* NetworkTarget.swift */,
+				5BC063F629DFBE0F00330A73 /* NetworkProvider.swift */,
+				5BC063F829DFBE8B00330A73 /* User.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A5871C3E86FC13792F81A129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E3A327138A73E23F7AB51F /* Pods_Generic_Network_Layer_RxMoya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BC063F029DFB6D500330A73 /* Build configuration list for PBXNativeTarget "Generic_Network_Layer_RxMoya" */;
 			buildPhases = (
+				F3CF7D5DEF2EF02FD21D21DD /* [CP] Check Pods Manifest.lock */,
 				5BC063D829DFB6D400330A73 /* Sources */,
 				5BC063D929DFB6D400330A73 /* Frameworks */,
 				5BC063DA29DFB6D400330A73 /* Resources */,
+				72801C1CC22ED2866C84DBA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +176,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72801C1CC22ED2866C84DBA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Generic_Network_Layer_RxMoya/Pods-Generic_Network_Layer_RxMoya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Generic_Network_Layer_RxMoya/Pods-Generic_Network_Layer_RxMoya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Generic_Network_Layer_RxMoya/Pods-Generic_Network_Layer_RxMoya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3CF7D5DEF2EF02FD21D21DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Generic_Network_Layer_RxMoya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BC063D829DFB6D400330A73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +225,10 @@
 			files = (
 				5BC063E429DFB6D400330A73 /* ViewController.swift in Sources */,
 				5BC063E029DFB6D400330A73 /* AppDelegate.swift in Sources */,
+				5BC063F929DFBE8B00330A73 /* User.swift in Sources */,
 				5BC063E229DFB6D400330A73 /* SceneDelegate.swift in Sources */,
+				5BC063F529DFBA9000330A73 /* NetworkTarget.swift in Sources */,
+				5BC063F729DFBE0F00330A73 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +370,7 @@
 		};
 		5BC063F129DFB6D500330A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E05E6442412F7562B2C2ED /* Pods-Generic_Network_Layer_RxMoya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +398,7 @@
 		};
 		5BC063F229DFB6D500330A73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2634958519DE09B73D450D /* Pods-Generic_Network_Layer_RxMoya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_Generic_Network_Layer_RxMoya {
+  umbrella header "Pods-Generic_Network_Layer_RxMoya-umbrella.h"
+
+  export *
+  module * { export * }
+}
